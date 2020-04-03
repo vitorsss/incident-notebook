@@ -1,7 +1,9 @@
 version: "3.7"
 services:
   notebook:
-    build: .
+    build:
+      context: .
+      dockerfile: Dockerfile-compose
     image: incident-notebook:latest
     container_name: incident-notebook
     ports:
