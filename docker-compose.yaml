@@ -1,0 +1,10 @@
+version: "3.7"
+services:
+  notebook:
+    build: .
+    image: incident-notebook:latest
+    container_name: incident-notebook
+    ports:
+      - 8888:8888
+    volumes:
+      - ./work:/home/jovyan/work
